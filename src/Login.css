@@ -1,0 +1,39 @@
+/* Reset default margins and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Ensure the body element takes up the full viewport height and width */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+/* Center the login content using grid */
+.login {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+/* Style the image */
+.login > img {
+    width: auto;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Style the login link */
+.login > a {
+    padding: 20px;
+    border-radius: 99px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(162, 206, 62);
+}
