@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import "./Footer.css";
 import {
     PlayCircleOutline,
@@ -7,34 +7,33 @@ import {
     PlaylistPlay,
     Shuffle,
     Repeat,
-    VoulmeDown,
+    VolumeDown,
 } from "@material-ui/icons";
-import { Grid, Slider } from "@material-ui/core"
-import { VolumeDown } from '@mui/icons-material';
+import { Grid, Slider } from "@material-ui/core";
 
 function Footer() {
     return (
         <div className='footer'>
-            <div className='"footer_left'>
+            <div className='footer_left'>
                 <img
                     src='https://i.pinimg.com/originals/8d/c7/52/8dc752834195102e4cb630a53221255e.jpg'
                     alt=''
-                    className='"footer_albumLogo' />
+                    className='footer_albumLogo' />
 
-                <div className='footer_songinfo'>
+                <div className='footer_songInfo'>
                     <h4>My fav Song</h4>
                     <p>Atharva</p>
                 </div>
             </div>
             <div className='footer_center'>
-                <Shuffle className='footer_green' />
+                <Shuffle className='footer_icon footer_green' />
                 <SkipPrevious className='footer_icon' />
                 <PlayCircleOutline fontSize='large' className='footer_icon' />
                 <SkipNext className='footer_icon' />
-                <Repeat className='footer_green' />
+                <Repeat className='footer_icon footer_green' />
             </div>
             <div className='footer_right'>
-                <Grid container spacing={2}>
+                <Grid container spacing={2} alignItems="center">
                     <Grid item>
                         <PlaylistPlay />
                     </Grid>
@@ -47,9 +46,7 @@ function Footer() {
                 </Grid>
             </div>
         </div>
-
-
-    )
+    );
 }
 
-export default Footer
+export default Footer;

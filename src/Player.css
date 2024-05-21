@@ -1,3 +1,6 @@
-.player__body {
+/* Player.css */
+.player_body {
     display: flex;
-}
+    background-color: #121212;
+  }
+  

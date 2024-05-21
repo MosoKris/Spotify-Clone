@@ -45,7 +45,7 @@ function App() {
         });
       });
     }
-  }, [dispatch]); // Add 'dispatch' to the dependency array
+  }, [dispatch]); // Ensure 'dispatch' is in the dependency array
 
   return (
     <div className="App">
